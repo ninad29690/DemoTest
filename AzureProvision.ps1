@@ -16,10 +16,9 @@ $cred = new-object -typename System.Management.Automation.PSCredential -argument
 
 Write-Output "Loggin in Azure"
 
-Login-AzureRmAccount -Credential $cred 
+#Login-AzureRmAccount -Credential $cred 
 
-
-#$subscription = Select-AzureRmSubscription -Name $subscriptionName
+$subscription = Select-AzureRmSubscription -Name $subscriptionName
 
 Write-Output "Selected Subscrition ==> $($subscription.SubscriptionName)"
 
