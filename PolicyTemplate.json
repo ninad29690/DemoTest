@@ -1,0 +1,9 @@
+{
+	"if": {
+    "field": "Type",
+    "notIn": ["Microsoft.Compute/virtualMachines", "Microsoft.Storage/storageAccounts", "Microsoft.Network/networkInterfaces", "Microsoft.Network/networkSecurityGroups", "Microsoft.Network/virtualNetworks", "Microsoft.Network/publicIPAddresses"]
+   },
+   "then": {
+   "effect": "Deny"
+   }
+}
